@@ -1,0 +1,39 @@
+{
+	"type":"stlib",
+	"unity_build":true,
+	"name":"EAStdC",
+	"target":"../EAStdC",
+	"version":"1.26.06",
+
+	"rpath":["$ORIGIN"],
+
+	"use":["pthread", "EABase", "EAAssert", "EAThread"],
+	"uselib":["EABuildFlags", "EAStdCBuildFlags"],
+
+	"includes":["../3rdparty/EAStdC/include"],
+	"export_includes":["../3rdparty/EAStdC/include"],
+
+	"sources":
+	[
+		"../3rdparty/EAStdC/source/EACallback.cpp",
+		"../3rdparty/EAStdC/source/EACType.cpp",
+		"../3rdparty/EAStdC/source/EADateTime.cpp",
+		"../3rdparty/EAStdC/source/EAFixedPoint.cpp",
+		"../3rdparty/EAStdC/source/EAGlobal.cpp",
+		"../3rdparty/EAStdC/source/EAHashCRC.cpp",
+		"../3rdparty/EAStdC/source/EAHashString.cpp",
+		"../3rdparty/EAStdC/source/EAMemory.cpp",
+		"../3rdparty/EAStdC/source/EAProcess.cpp",
+		"../3rdparty/EAStdC/source/EARandom.cpp",
+		"../3rdparty/EAStdC/source/EAScanf.cpp",
+		"../3rdparty/EAStdC/source/EAScanfCore.cpp",
+		"../3rdparty/EAStdC/source/EASprintf.cpp",
+		"../3rdparty/EAStdC/source/EASprintfCore.cpp",
+		"../3rdparty/EAStdC/source/EASprintfOrdered.cpp",
+		"../3rdparty/EAStdC/source/EAStdC.cpp",
+		"../3rdparty/EAStdC/source/EAStopwatch.cpp",
+		"../3rdparty/EAStdC/source/EAString.cpp",
+		"../3rdparty/EAStdC/source/EATextUtil.cpp",
+		"../3rdparty/EAStdC/source/Int128_t.cpp"
+	]
+}

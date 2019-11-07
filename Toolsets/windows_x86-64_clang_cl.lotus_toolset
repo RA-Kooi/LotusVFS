@@ -1,0 +1,133 @@
+{
+	"cc":"clang_cl",
+	"cc_path":"clang-cl.exe",
+
+	"cxx":"clang_cl",
+	"cxx_path":"clang-cl.exe",
+
+	"ar_path":"lib.exe",
+
+	"ignore_paths":false,
+
+	"system_include_flags":["/imsvc"],
+	"system_includes":[],
+
+	"defines":
+	{
+		"base":
+		[
+			"UNICODE",
+			"_UNICODE",
+			"_CRT_SECURE_NO_WARNINGS",
+			"WIN32_LEAN_AND_MEAN",
+			"VC_EXTRA_LEAN",
+			"NOMINMAX"
+		],
+		"debug":["DEBUG", "_DEBUG", "EA_DEBUG"],
+		"release":["NDEBUG"]
+	},
+
+	"cc_flags":
+	[
+		"/arch:AVX2",
+		"/GF",
+		"/GS",
+		"/Gy",
+		"/Gw",
+		"/permissive-",
+		"/sdl",
+		"/utf-8",
+		"/Wall",
+		"/WX",
+		"/Zi",
+		"-Wno-unknown-warning-option",
+		"-Wno-reserved-id-macro"
+	],
+	"cc_flags_debug":
+	[
+		"/MDd",
+		"/Od",
+		"/Ob0",
+		"/RTC1"
+	],
+	"cc_flags_release":
+	[
+		"/MD",
+		"/O2",
+		"/Ob2",
+		"/Oi",
+		"/Ot",
+		"/fp:fast"
+	],
+
+	"cxx_flags":
+	[
+		"/arch:AVX2",
+		"/EHsc",
+		"/GF",
+		"/GR-",
+		"/GS",
+		"/Gy",
+		"/Gw",
+		"/permissive-",
+		"/sdl",
+		"/std:c++17",
+		"/utf-8",
+		"/Wall",
+		"/WX",
+		"/Zi",
+		"-Wno-nonportable-system-include-path",
+		"-Wno-c++98-compat",
+		"-Wno-shadow-field-in-constructor",
+		"-Wno-padded",
+		"-Wno-gnu-anonymous-struct",
+		"-Wno-nested-anon-types",
+		"-Wno-shadow-uncaptured-local",
+		"-Wno-shadow-field",
+		"-Wno-unknown-warning-option",
+		"-Wno-used-but-marked-unused",
+		"-Wno-reserved-id-macro",
+		"-Wno-exit-time-destructors",
+		"-Wno-switch-enum",
+		"-Wno-c++98-compat-pedantic",
+		"-Wno-deprecated"
+	],
+	"cxx_flags_debug":
+	[
+		"/MDd",
+		"/Od",
+		"/Ob0",
+		"/RTC1"
+	],
+	"cxx_flags_release":
+	[
+		"/MD",
+		"/O2",
+		"/Ob2",
+		"/Oi",
+		"/Ot",
+		"/fp:fast"
+	],
+
+	"stlib_flags":["/MACHINE:x64"],
+	"stlib_flags_release":["/LTCG"],
+	"stlib_path":[],
+
+	"ld_flags":
+	[
+		"/DEBUG",
+		"/INCREMENTAL:NO",
+		"/MACHINE:x64",
+		"/WX"
+	],
+	"ld_flags_debug":[],
+	"ld_flags_release":
+	[
+		"/OPT:REF,ICF"
+	],
+
+	"shlib_flags":["/DLL"],
+	"shlib_path":[],
+
+	"exe_flags":["/SUBSYSTEM:CONSOLE"]
+}

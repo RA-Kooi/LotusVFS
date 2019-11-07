@@ -1,0 +1,20 @@
+{
+	"type":"stlib",
+	"unity_build":false,
+	"name":"EAAssert",
+	"target":"../EAAssert",
+	"version":"1.05.08",
+
+	"rpath":["$ORIGIN"],
+
+	"use":["EABase"],
+	"uselib":["EABuildFlags", "EAAssertBuildFlags"],
+
+	"includes":["../3rdparty/EAAssert/include"],
+	"export_includes":["../3rdparty/EAAssert/include"],
+
+	"sources":
+	[
+		"../3rdparty/EAAssert/source/eaassert.cpp"
+	]
+}

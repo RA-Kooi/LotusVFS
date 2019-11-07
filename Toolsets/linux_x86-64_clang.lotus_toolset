@@ -1,0 +1,73 @@
+{
+	"cc":"clang",
+	"cc_path":"clang",
+
+	"cxx":"clang++",
+	"cxx_path":"clang++",
+
+	"ar_path":"llvm-ar",
+
+	"system_include_flags":["-isystem"],
+	"system_includes":[],
+
+	"defines":
+	{
+		"base":["UNICODE", "_UNICODE"],
+		"debug":["DEBUG", "_DEBUG", "EA_DEBUG"],
+		"release":["NDEBUG"]
+	},
+
+	"cc_flags":
+	[
+		"-std=c11",
+		"-march=native",
+		"-ffunction-sections",
+		"-fdata-sections",
+		"-Weverything",
+		"-Werror",
+		"-Wno-unknown-warning-option"
+	],
+	"cc_flags_debug":["-Og", "-ggdb3"],
+	"cc_flags_release":["-O3", "-ffast-math"],
+
+	"cxx_flags":
+	[
+		"-std=c++17",
+		"-march=native",
+		"-fno-rtti",
+		"-fexceptions",
+		"-ffunction-sections",
+		"-fdata-sections",
+		"-Weverything",
+		"-Werror",
+		"-Wno-c++98-compat",
+		"-Wno-c++98-compat-pedantic",
+		"-Wno-documentation",
+		"-Wno-documentation-unknown-command",
+		"-Wno-exit-time-destructors",
+		"-Wno-global-constructors",
+		"-Wno-gnu-anonymous-struct",
+		"-Wno-nested-anon-types",
+		"-Wno-padded",
+		"-Wno-shadow-field",
+		"-Wno-shadow-field-in-constructor",
+		"-Wno-shadow-uncaptured-local",
+		"-Wno-switch-enum",
+		"-Wno-unknown-warning-option",
+		"-Wno-weak-template-vtables"
+	],
+	"cxx_flags_debug":["-Og", "-ggdb3"],
+	"cxx_flags_release":["-O3", "-ffast-math"],
+
+	"stlib_flags":["rcs"],
+	"stlib_path":[],
+
+	"ld_flags":[],
+	"ld_flags_debug":["-g"],
+	"ld_flags_release":["-Wl,-s", "-Wl,-gc-sections"],
+
+	"shlib_flags":["-shared"],
+	"shlib_path":[],
+
+	"exe_flags":[]
+}

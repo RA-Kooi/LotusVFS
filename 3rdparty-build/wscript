@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+
+def build(bld):
+	bld.project('EAAssert')
+	bld.project('EASTL')
+	bld.project('EAThread')
+	bld.project('EAStdC')
+	bld.project('EAMain')
+	bld.project('EATest')

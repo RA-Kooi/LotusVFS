@@ -1,0 +1,36 @@
+{
+	"type":"stlib",
+	"unity_build":true,
+	"name":"EAMain",
+	"target":"../EAMain",
+	"version":"3.01.01",
+
+	"rpath":["$ORIGIN"],
+
+	"use":["pthread", "EABase", "EAAssert", "EAStdC"],
+	"uselib":["EABuildFlags", "EAMainBuildFlags"],
+
+	"defines":
+	{
+		"base":["EAMAIN_NETWORK_CHANNEL_PORT=8080"]
+	},
+
+	"includes":
+	[
+		"../3rdparty/EAMain/include",
+		"../3rdparty/EAMain/source"
+	],
+	"export_includes":["../3rdparty/EAMain/include"],
+
+	"sources":
+	[
+		"../3rdparty/EAMain/source/EAEntryPointMain.cpp",
+		"../3rdparty/EAMain/source/EAMain.cpp",
+		"../3rdparty/EAMain/source/EAMainExit.cpp",
+		"../3rdparty/EAMain/source/EAMainPrint.cpp",
+		"../3rdparty/EAMain/source/internal/EAMainChannels.cpp",
+		"../3rdparty/EAMain/source/internal/EAMainPrintManager.cpp",
+		"../3rdparty/EAMain/source/internal/EAMainStartupShutdown.cpp",
+		"../3rdparty/EAMain/source/internal/NetworkChannel.cpp"
+	]
+}

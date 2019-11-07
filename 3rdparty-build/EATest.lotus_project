@@ -1,0 +1,20 @@
+{
+	"type":"stlib",
+	"unity_build":false,
+	"name":"EATest",
+	"target":"../EATest",
+	"version":"2.08.08",
+
+	"rpath":["$ORIGIN"],
+
+	"use":["pthread", "EABase", "EAStdC", "EAMain", "EAThread", "EASTL"],
+	"uselib":["EABuildFlags"],
+
+	"includes":["../3rdparty/EATest/include"],
+	"export_includes":["../3rdparty/EATest/include"],
+
+	"sources":
+	[
+		"../3rdparty/EATest/source/EATest.cpp"
+	]
+}

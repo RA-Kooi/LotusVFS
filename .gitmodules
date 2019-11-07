@@ -1,0 +1,24 @@
+[submodule "LotusWaf"]
+	path = LotusWaf
+	url = git@github.com:RA-Kooi/LotusWaf.git
+[submodule "3rdparty/EASTL"]
+	path = 3rdparty/EASTL
+	url = git@github.com:electronicarts/EASTL.git
+[submodule "3rdparty/EABase"]
+	path = 3rdparty/EABase
+	url = git@github.com:electronicarts/EABase.git
+[submodule "3rdparty/EAStdC"]
+	path = 3rdparty/EAStdC
+	url = git@github.com:RA-Kooi/EAStdC.git
+[submodule "3rdparty/EAAssert"]
+	path = 3rdparty/EAAssert
+	url = git@github.com:electronicarts/EAAssert.git
+[submodule "3rdparty/EAMain"]
+	path = 3rdparty/EAMain
+	url = git@github.com:RA-Kooi/EAMain.git
+[submodule "3rdparty/EATest"]
+	path = 3rdparty/EATest
+	url = git@github.com:electronicarts/EATest.git
+[submodule "3rdparty/EAThread"]
+	path = 3rdparty/EAThread
+	url = git@github.com:RA-Kooi/EAThread.git

@@ -1,0 +1,32 @@
+{
+	"type":"stlib",
+	"unity_build":true,
+	"name":"EAThread",
+	"target":"../EAThread",
+	"version":"1.32.09",
+
+	"rpath":["$ORIGIN"],
+
+	"use":["pthread", "EABase"],
+	"uselib":["EABuildFlags", "EAThreadBuildFlags"],
+
+	"includes":["../3rdparty/EAThread/include"],
+	"export_includes":["../3rdparty/EAThread/include"],
+
+	"sources":
+	[
+		"../3rdparty/EAThread/source/eathread.cpp",
+		"../3rdparty/EAThread/source/eathread_barrier.cpp",
+		"../3rdparty/EAThread/source/eathread_callstack.cpp",
+		"../3rdparty/EAThread/source/eathread_condition.cpp",
+		"../3rdparty/EAThread/source/eathread_futex.cpp",
+		"../3rdparty/EAThread/source/eathread_mutex.cpp",
+		"../3rdparty/EAThread/source/eathread_pool.cpp",
+		"../3rdparty/EAThread/source/eathread_rwmutex.cpp",
+		"../3rdparty/EAThread/source/eathread_rwmutex_ip.cpp",
+		"../3rdparty/EAThread/source/eathread_semaphore.cpp",
+		"../3rdparty/EAThread/source/eathread_storage.cpp",
+		"../3rdparty/EAThread/source/eathread_thread.cpp",
+		"../3rdparty/EAThread/source/version.cpp"
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"type":"stlib",
+	"unity_build":true,
+	"name":"EASTL",
+	"target":"../EASTL",
+	"version":"3.15.00",
+
+	"rpath":["$ORIGIN"],
+
+	"use":["pthread", "EABase"],
+	"uselib":["EABuildFlags", "EASTLBuildFlags"],
+
+	"defines":
+	{
+		"base":["EASTL_OPENSOURCE=1"]
+	},
+
+	"includes":["../3rdparty/EASTL/include"],
+	"export_includes":["../3rdparty/EASTL/include"],
+
+	"sources":
+	[
+		"../3rdparty/EASTL/source/allocator_eastl.cpp",
+		"../3rdparty/EASTL/source/assert.cpp",
+		"../3rdparty/EASTL/source/fixed_pool.cpp",
+		"../3rdparty/EASTL/source/hashtable.cpp",
+		"../3rdparty/EASTL/source/intrusive_list.cpp",
+		"../3rdparty/EASTL/source/numeric_limits.cpp",
+		"../3rdparty/EASTL/source/red_black_tree.cpp",
+		"../3rdparty/EASTL/source/string.cpp",
+		"../3rdparty/EASTL/source/thread_support.cpp"
+	]
+}

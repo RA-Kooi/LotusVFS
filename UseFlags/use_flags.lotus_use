@@ -1,0 +1,203 @@
+{
+	"pthread":
+	{
+		"type":"lib",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"shlib_link":["pthread"],
+
+			"optional":false,
+
+			"code":"pthread_test.cpp"
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		},
+		"windows_x86-64_clang_cl":
+		{
+			"no_common":true
+		}
+	},
+	"dl":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64"],
+
+		"common":
+		{
+			"ld_flags":["-ldl"]
+		}
+	},
+	"EABuildFlags":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-atomic-implicit-seq-cst",
+				"-Wno-cast-align",
+				"-Wno-cast-qual",
+				"-Wno-comma",
+				"-Wno-double-promotion",
+				"-Wno-extra-semi-stmt",
+				"-Wno-missing-noreturn",
+				"-Wno-missing-prototypes",
+				"-Wno-missing-variable-declarations",
+				"-Wno-old-style-cast",
+				"-Wno-pedantic",
+				"-Wno-shorten-64-to-32",
+				"-Wno-sign-conversion",
+				"-Wno-undef",
+				"-Wno-undefined-reinterpret-cast",
+				"-Wno-unused-parameter",
+				"-Wno-weak-vtables",
+				"-Wno-zero-as-null-pointer-constant"
+			]
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		}
+	},
+	"EAAssertBuildFlags":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-format-nonliteral"
+			]
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		}
+	},
+	"EAAssertBuildFlags":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-format-nonliteral"
+			]
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		}
+	},
+	"EAMainBuildFlags":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-disabled-macro-expansion"
+			]
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		}
+	},
+	"EAStdCBuildFlags":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-covered-switch-default",
+				"-Wno-deprecated",
+				"-Wno-float-conversion",
+				"-Wno-float-equal",
+				"-Wno-implicit-fallthrough",
+				"-Wno-reserved-id-macro"
+			]
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		}
+	},
+	"EASTLBuildFlags":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-extra-semi",
+				"-Wno-redundant-parens",
+				"-Wno-shift-sign-overflow",
+				"-Wno-unknown-pragmas",
+				"-Wno-unused-template"
+			]
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		}
+	},
+	"EAThreadBuildFlags":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-format-nonliteral",
+				"-Wno-implicit-int-conversion"
+			]
+		},
+		"windows_x86-64_msvc":
+		{
+			"no_common":true
+		}
+	},
+	"EABase":
+	{
+		"type":"flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"includes":
+			[
+				"./3rdparty/EABase/include/Common"
+			]
+		}
+	}
+}
