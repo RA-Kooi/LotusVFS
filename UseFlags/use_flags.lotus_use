@@ -90,7 +90,13 @@
 		},
 		"windows_x86-64_msvc":
 		{
-			"no_common":true
+			"no_common":true,
+
+			"cxx_flags":
+			[
+				"/wd4100",
+				"/wd4365"
+			]
 		}
 	},
 	"EAAssertBuildFlags":
@@ -275,7 +281,15 @@
 		},
 		"windows_x86-64_msvc":
 		{
-			"no_common":true
+			"no_common":true,
+
+			"cxx_flags":
+			[
+				"/wd4191",
+				"/wd4828",
+				"/wd5038",
+				"/wd5039"
+			]
 		}
 	},
 	"EABase":
