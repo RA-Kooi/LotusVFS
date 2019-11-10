@@ -8,7 +8,7 @@
 	"rpath":["$ORIGIN"],
 
 	"use":["pthread", "EABase", "EAStdC", "EAMain", "EAThread", "EASTL"],
-	"uselib":["EABuildFlags"],
+	"uselib":["EABuildFlags", "EATestBuildFlags"],
 
 	"includes":["../3rdparty/EATest/include"],
 	"export_includes":["../3rdparty/EATest/include"],
