@@ -58,6 +58,7 @@
 				"-Wno-sign-conversion",
 				"-Wno-undef",
 				"-Wno-undefined-reinterpret-cast",
+				"-Wno-unknown-pragmas",
 				"-Wno-unused-parameter",
 				"-Wno-weak-vtables",
 				"-Wno-zero-as-null-pointer-constant"
@@ -78,25 +79,8 @@
 		{
 			"cxx_flags":
 			[
-				"-Wno-format-nonliteral"
-			]
-		},
-		"windows_x86-64_msvc":
-		{
-			"no_common":true
-		}
-	},
-	"EAAssertBuildFlags":
-	{
-		"type":"flags",
-
-		"platforms":["linux_x64", "win32_x64"],
-
-		"common":
-		{
-			"cxx_flags":
-			[
-				"-Wno-format-nonliteral"
+				"-Wno-format-nonliteral",
+				"-Wno-unused-macros"
 			]
 		},
 		"windows_x86-64_msvc":
@@ -137,7 +121,8 @@
 				"-Wno-float-conversion",
 				"-Wno-float-equal",
 				"-Wno-implicit-fallthrough",
-				"-Wno-reserved-id-macro"
+				"-Wno-reserved-id-macro",
+				"-Wno-unused-function"
 			]
 		},
 		"windows_x86-64_msvc":
