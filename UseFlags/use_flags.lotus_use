@@ -290,6 +290,15 @@
 				"/wd5038",
 				"/wd5039"
 			]
+		},
+		"windows_x86-64_clang_cl":
+		{
+			"cxx_flags":
+			[
+				"-Wno-ignored-pragma-optimize",
+				"-Wno-microsoft-cast",
+				"-Wno-reorder"
+			]
 		}
 	},
 	"EABase":

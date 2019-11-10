@@ -18,7 +18,7 @@
 	url = git@github.com:RA-Kooi/EAMain.git
 [submodule "3rdparty/EATest"]
 	path = 3rdparty/EATest
-	url = git@github.com:electronicarts/EATest.git
+	url = git@github.com:RA-Kooi/EATest.git
 [submodule "3rdparty/EAThread"]
 	path = 3rdparty/EAThread
 	url = git@github.com:RA-Kooi/EAThread.git
