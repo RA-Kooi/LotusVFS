@@ -5,11 +5,15 @@ top = '.'
 out = 'build'
 
 def options(opt):
-	opt.load('LotusWaf', tooldir='LotusWaf')
+    opt.load('LotusWaf', tooldir='LotusWaf')
 
 def configure(cfg):
-	cfg.load('LotusWaf', tooldir='LotusWaf')
+    cfg.load('LotusWaf', tooldir='LotusWaf')
 
 def build(bld):
-	bld.recurse('3rdparty-build')
-	#bld.project('LotusVFS')
+    bld.load('LotusWaf', tooldir='LotusWaf')
+    bld.recurse('3rdparty-build')
+    #bld.project('LotusVFS')
+
+def test(bld):
+    bld.load('LotusWaf', tooldir='LotusWaf')

@@ -41,7 +41,6 @@
 		"/sdl",
 		"/utf-8",
 		"/Wall",
-		"/WX",
 		"/Zi",
 		"/wd4464",
 		"/wd4514",
@@ -50,6 +49,7 @@
 		"/wd4820",
 		"/wd5045"
 	],
+	"dev_cc_flags":["/WX"],
 	"cc_flags_debug":
 	[
 		"/MDd",
@@ -85,7 +85,6 @@
 		"/std:c++17",
 		"/utf-8",
 		"/Wall",
-		"/WX",
 		"/Zi",
 		"/wd4061",
 		"/wd4251",
@@ -104,6 +103,7 @@
 		"/wd5027",
 		"/wd5045"
 	],
+	"dev_cxx_flags":["/WX"],
 	"cxx_flags_debug":
 	[
 		"/MDd",

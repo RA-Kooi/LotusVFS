@@ -25,9 +25,9 @@
 		"-fdata-sections",
 		"-Wall",
 		"-Wextra",
-		"-pedantic",
-		"-Werror"
+		"-pedantic"
 	],
+	"dev_cc_flags":["-Werror"],
 	"cc_flags_debug":["-Og", "-ggdb3"],
 	"cc_flags_release":["-O3", "-ffast-math"],
 
@@ -41,9 +41,9 @@
 		"-fdata-sections",
 		"-Wall",
 		"-Wextra",
-		"-pedantic",
-		"-Werror"
+		"-pedantic"
 	],
+	"dev_cxx_flags":["-Werror"],
 	"cxx_flags_debug":["-Og", "-ggdb3"],
 	"cxx_flags_release":["-O3", "-ffast-math"],
 

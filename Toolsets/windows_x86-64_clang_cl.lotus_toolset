@@ -38,11 +38,11 @@
 		"/sdl",
 		"/utf-8",
 		"/Wall",
-		"/WX",
 		"/Zi",
 		"-Wno-unknown-warning-option",
 		"-Wno-reserved-id-macro"
 	],
+	"dev_cc_flags":["/WX"],
 	"cc_flags_debug":
 	[
 		"/MDd",
@@ -74,7 +74,6 @@
 		"/std:c++17",
 		"/utf-8",
 		"/Wall",
-		"/WX",
 		"/Zi",
 		"-Wno-c++98-compat",
 		"-Wno-c++98-compat-pedantic",
@@ -95,6 +94,7 @@
 		"-Wno-unknown-warning-option",
 		"-Wno-used-but-marked-unused"
 	],
+	"dev_cxx_flags":["/WX"],
 	"cxx_flags_debug":
 	[
 		"/MDd",
