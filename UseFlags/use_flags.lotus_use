@@ -17,10 +17,7 @@
 		{
 			"no_common":true
 		},
-		"windows_x86-64_clang_cl":
-		{
-			"no_common":true
-		}
+		"windows_x86-64_clang_cl":"windows_x86-64_msvc"
 	},
 	"dl":
 	{
@@ -64,18 +61,7 @@
 				"-Wno-zero-as-null-pointer-constant"
 			]
 		},
-		"windows_x86-64_gcc":
-		{
-			"no_common":true,
-
-			"cxx_flags":
-			[
-				"-Wno-deprecated-copy",
-				"-Wno-pedantic",
-				"-Wno-unknown-pragmas",
-				"-Wno-unused-parameter"
-			]
-		},
+		"windows_x86-64_gcc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
 		{
 			"no_common":true,
@@ -113,15 +99,9 @@
 				"-Wno-unused-macros"
 			]
 		},
-		"windows_x86-64_gcc":
-		{
-			"no_common":true
-		},
+		"windows_x86-64_gcc":"linux_x86-64_gcc",
+		"windows_x86-64_msvc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
-		{
-			"no_common":true
-		},
-		"windows_x86-64_msvc":
 		{
 			"no_common":true
 		}
@@ -139,15 +119,9 @@
 				"-Wno-disabled-macro-expansion"
 			]
 		},
-		"windows_x86-64_gcc":
-		{
-			"no_common":true
-		},
+		"windows_x86-64_gcc":"linux_x86-64_gcc",
+		"windows_x86-64_msvc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
-		{
-			"no_common":true
-		},
-		"windows_x86-64_msvc":
 		{
 			"no_common":true
 		}
@@ -171,19 +145,7 @@
 				"-Wno-unused-function"
 			]
 		},
-		"windows_x86-64_gcc":
-		{
-			"no_common":true,
-
-			"cxx_flags":
-			[
-				"-Wno-implicit-fallthrough",
-				"-Wno-nonnull",
-				"-Wno-strict-aliasing",
-				"-Wno-tautological-compare",
-				"-Wno-unused-function"
-			]
-		},
+		"windows_x86-64_gcc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
 		{
 			"no_common":true,
@@ -219,12 +181,7 @@
 				"-Wno-unused-template"
 			]
 		},
-		"windows_x86-64_gcc":
-		{
-			"no_common":true,
-
-			"cxx_flags":["-Wno-unused-variable"]
-		},
+		"windows_x86-64_gcc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
 		{
 			"no_common":true,
@@ -244,10 +201,7 @@
 
 		"common":{},
 
-		"windows_x86-64_gcc":
-		{
-			"cxx_flags":["-Wno-cast-function-type"]
-		},
+		"windows_x86-64_gcc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
 		{
 			"cxx_flags":["-Wno-cast-function-type"]
@@ -267,12 +221,7 @@
 				"-Wno-implicit-int-conversion"
 			]
 		},
-		"windows_x86-64_gcc":
-		{
-			"no_common":true,
-
-			"cxx_flags":["-Wno-class-memaccess"]
-		},
+		"windows_x86-64_gcc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
 		{
 			"no_common":true,
