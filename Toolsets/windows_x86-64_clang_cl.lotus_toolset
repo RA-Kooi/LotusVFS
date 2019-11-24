@@ -9,8 +9,10 @@
 
 	"ignore_paths":false,
 
-	"system_include_flags":["/imsvc"],
+	"system_include_flag":"/imsvc",
 	"system_includes":[],
+
+	"forced_include_flag":"/FI",
 
 	"defines":
 	{

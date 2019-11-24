@@ -9,8 +9,10 @@
 
 	"ignore_paths":true,
 
-	"system_include_flags":[],
+	"system_include_flag":"",
 	"system_includes":[],
+
+	"forced_include_flag":"/FI",
 
 	"defines":
 	{

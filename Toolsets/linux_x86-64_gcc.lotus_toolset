@@ -7,8 +7,10 @@
 
 	"ar_path":"ar",
 
-	"system_include_flags":["-isystem"],
+	"system_include_flag":"-isystem",
 	"system_includes":[],
+
+	"forced_include_flag":"-include",
 
 	"defines":
 	{
