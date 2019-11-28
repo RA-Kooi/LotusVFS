@@ -7,7 +7,7 @@
 
 	"rpath":["$ORIGIN"],
 
-	"use":["pthread", "EABase"],
+	"use":["pthread", "EABase", "LotusEASTLSupport"],
 	"uselib":["EABuildFlags", "EASTLBuildFlags"],
 
 	"defines":

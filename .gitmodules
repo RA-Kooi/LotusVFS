@@ -22,3 +22,6 @@
 [submodule "3rdparty/EAThread"]
 	path = 3rdparty/EAThread
 	url = git@github.com:RA-Kooi/EAThread.git
+[submodule "External/LotusEASTLSupport"]
+	path = External/LotusEASTLSupport
+	url = git@github.com:RA-Kooi/LotusEASTLSupport.git

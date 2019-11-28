@@ -12,6 +12,7 @@ def configure(cfg):
 
 def build(bld):
     bld.load('LotusWaf', tooldir='LotusWaf')
+    bld.recurse('External')
     bld.recurse('3rdparty-build')
     #bld.project('LotusVFS')
 
