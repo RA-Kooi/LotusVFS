@@ -1,4 +1,8 @@
-#!/usr/bin/env sh
+#!/usr/bin/env python3
 # encoding: utf-8
 
-LotusWaf/waf $*
+import subprocess, sys, os
+
+arguments = [sys.executable] + [os.path.join('LotusWaf', 'waf')] + sys.argv[1:]
+print(os.getcwd())
+subprocess.run(args=arguments, cwd=os.getcwd())
