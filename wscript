@@ -14,7 +14,7 @@ def build(bld):
     bld.load('LotusWaf', tooldir='LotusWaf')
     bld.recurse('External')
     bld.recurse('3rdparty-build')
-    #bld.project('LotusVFS')
+    bld.project('LotusVFS')
 
 def test(bld):
     bld.load('LotusWaf', tooldir='LotusWaf')

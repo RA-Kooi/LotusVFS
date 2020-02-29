@@ -1,0 +1,20 @@
+{
+	"type":"stlib",
+	"unity_build":false,
+	"name":"LotusVFS",
+	"target":"LotusVFS",
+	"version":"0.0.0",
+
+	"rpath":["$ORIGIN"],
+
+	"use":["EASTL", "LotusCommon"],
+	"uselib":[],
+
+	"includes":["include/LotusVFS"],
+	"export_includes":["include"],
+
+	"sources":
+	[
+		"source/Exceptions/file_exceptions.cpp"
+	]
+}
