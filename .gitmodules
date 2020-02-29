@@ -25,3 +25,6 @@
 [submodule "External/LotusEASTLSupport"]
 	path = External/LotusEASTLSupport
 	url = git@github.com:RA-Kooi/LotusEASTLSupport.git
+[submodule "External/LotusCommon"]
+	path = External/LotusCommon
+	url = git@github.com:RA-Kooi/LotusCommon.git
