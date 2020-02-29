@@ -124,7 +124,7 @@
 		"/fp:fast"
 	],
 
-	"stlib_flags":["/MACHINE:x64"],
+	"stlib_flags":["/nologo", "/MACHINE:x64"],
 	"stlib_flags_release":["/LTCG"],
 	"stlib_path":[],
 
