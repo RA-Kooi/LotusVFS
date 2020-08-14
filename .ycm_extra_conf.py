@@ -6,6 +6,7 @@ def DirectoryOfThisScript():
 
 def Settings( **kwargs ):
 	return { 'ls': {
-			'compilationDatabaseDirectory': DirectoryOfThisScript() + 'build'
+			'compilationDatabaseDirectory': DirectoryOfThisScript() + 'build',
+			'compilationDatabasePath': DirectoryOfThisScript() + 'build'
 		}
 	}
