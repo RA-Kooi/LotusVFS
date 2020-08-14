@@ -41,6 +41,7 @@
 		"/utf-8",
 		"/Wall",
 		"/Zi",
+		"-m64",
 		"-Wno-unknown-warning-option",
 		"-Wno-reserved-id-macro"
 	],
@@ -77,6 +78,7 @@
 		"/utf-8",
 		"/Wall",
 		"/Zi",
+		"-m64",
 		"-Wno-c++98-compat",
 		"-Wno-c++98-compat-pedantic",
 		"-Wno-deprecated",
