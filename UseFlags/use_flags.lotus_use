@@ -141,6 +141,7 @@
 				"-Wno-float-conversion",
 				"-Wno-float-equal",
 				"-Wno-implicit-fallthrough",
+				"-Wno-implicit-int-float-conversion",
 				"-Wno-reserved-id-macro",
 				"-Wno-unused-function"
 			]
@@ -175,6 +176,7 @@
 			"cxx_flags":
 			[
 				"-Wno-extra-semi",
+				"-Wno-implicit-int-float-conversion",
 				"-Wno-redundant-parens",
 				"-Wno-shift-sign-overflow",
 				"-Wno-unknown-pragmas",
@@ -204,7 +206,15 @@
 		"windows_x86-64_gcc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
 		{
-			"cxx_flags":["-Wno-cast-function-type"]
+			"cxx_flags":
+			[
+				"-Wno-cast-function-type",
+				"-Wno-implicit-int-float-conversion"
+			]
+		},
+		"windows_x86-64_clang_cl":
+		{
+			"cxx_flags":["-Wno-implicit-int-float-conversion"]
 		}
 	},
 	"EAThreadBuildFlags":
