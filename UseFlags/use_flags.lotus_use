@@ -58,7 +58,9 @@
 				"-Wno-unknown-pragmas",
 				"-Wno-unused-parameter",
 				"-Wno-weak-vtables",
-				"-Wno-zero-as-null-pointer-constant"
+				"-Wno-zero-as-null-pointer-constant",
+				"-Wno-suggest-destructor-override",
+				"-Wno-suggest-override"
 			]
 		},
 		"windows_x86-64_gcc":"linux_x86-64_gcc",
@@ -143,7 +145,9 @@
 				"-Wno-implicit-fallthrough",
 				"-Wno-implicit-int-float-conversion",
 				"-Wno-reserved-id-macro",
-				"-Wno-unused-function"
+				"-Wno-unused-function",
+				"-Wno-suggest-override",
+				"-Wno-reserved-identifier"
 			]
 		},
 		"windows_x86-64_gcc":"linux_x86-64_gcc",
@@ -201,11 +205,19 @@
 
 		"platforms":["linux_x64", "win32_x64"],
 
-		"common":{},
+		"common":
+		{
+			"cxx_flags":
+			[
+				"-Wno-implicit-int-float-conversion"
+			]
+		},
 
 		"windows_x86-64_gcc":"linux_x86-64_gcc",
 		"linux_x86-64_gcc":
 		{
+			"no_common": true,
+
 			"cxx_flags":
 			[
 				"-Wno-cast-function-type",
@@ -228,7 +240,8 @@
 			"cxx_flags":
 			[
 				"-Wno-format-nonliteral",
-				"-Wno-implicit-int-conversion"
+				"-Wno-implicit-int-conversion",
+				"-Wno-sign-compare"
 			]
 		},
 		"windows_x86-64_gcc":"linux_x86-64_gcc",
