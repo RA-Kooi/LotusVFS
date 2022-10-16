@@ -7,7 +7,7 @@
 
 	"rpath":["$ORIGIN"],
 
-	"use":["EASTL", "LotusCommon"],
+	"use":["EASTL", "LotusCommon", "tlexpected"],
 	"uselib":[],
 
 	"includes":["include/LotusVFS"],

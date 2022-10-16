@@ -287,5 +287,19 @@
 				"./3rdparty/EASTL/include"
 			]
 		}
+	},
+	"tlexpected":
+	{
+		"type": "flags",
+
+		"platforms":["linux_x64", "win32_x64"],
+
+		"common":
+		{
+			"includes":
+			[
+				"./3rdparty/expected/include"
+			]
+		}
 	}
 }

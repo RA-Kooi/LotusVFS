@@ -28,3 +28,6 @@
 [submodule "External/LotusCommon"]
 	path = External/LotusCommon
 	url = git@github.com:RA-Kooi/LotusCommon.git
+[submodule "External/expected"]
+	path = 3rdparty/expected
+	url = git@github.com:TartanLlama/expected.git
